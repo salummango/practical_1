@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Example Page</title>
+    <style>
+        body {
+            background-image: url("./blob-scene-haikei.png");
+            background-size: cover;
+            background-repeat: no-repeat;
+            color: white;
+            font-family: Arial, sans-serif;
+            font-size: 18px;
+            backdrop-filter: blur(5px);
+        }
+        
+        pre {
+            background-color: rgba(192, 182, 182, 0.5);
+            padding: 20px;
+            white-space: pre-wrap;
+            font-family: Consolas, monospace;
+            font-size: 14px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Welcome to my java coding section</h1>
+    <p>This is an example page that demonstrates the use of the <code>&lt;body&gt;</code> and <code>&lt;pre&gt;</code> tags.</p>
+
+    <pre>
+		public class Example {
+			public static void main(String[] args) {
+				System.out.println("Hello, world!");
+			}
+		}
+	</pre>
+    <p>The above code will display the message Hello, Word!</p>
+    <p>Let's look another simple code......</p>
+
+    <pre>
+        import java.util.Scanner;
+        public class Salary {
+            public static void main(String[] args) {
+                int salary;
+                int performance;
+                Scanner me = new Scanner (System.in);
+                System.out.print("ENTER SALARY : " );
+                salary=me.nextInt();
+                System.out.print("ENTER PERFORMANCE : " );
+                performance=me.nextInt();
+                if (performance >= 90){
+                    int salaryconverter= (salary * 3 / 100) ;
+                    int salaryperformance=(salary + salaryconverter);
+                    System.out.print("Your salary is : " + salaryperformance);
+                }else{
+                    System.out.print("Your salary is : " + salary);
+                }
+            }
+        }
+    </pre>
+    <p>The code above deals with with the employee salary that based on their perfomance <br> and alary will increase up to 3% to only those who have 90% of perfomance
+    </p>
+</body>
+
+</html>
